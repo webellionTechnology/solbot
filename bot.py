@@ -113,7 +113,7 @@ async def party_register(ctx, party_name: str, party_hex: str):
     else:
         await ctx.send("Invalid Party Name")
 
-@bot.command(name"business-register")
+@bot.command(name="business-register")
 async def business_register(ctx, business_name: str, business_hex: str)
     if len(party_hex) == 7:
         user_id = ctx.author.id
