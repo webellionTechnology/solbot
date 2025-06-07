@@ -118,11 +118,11 @@ async def business_register(ctx, business_name: str, business_hex: str)
     if len(party_hex) == 7:
         user_id = ctx.author.id
         nickname = ctx.author.nick or ctx.author.name
-        party_reg_msg = (
-        f"# New Party Registration Application:\nFounderID: {user_id}\nFounder: {nickname}\nParty Name: {party_name}\nParty Hex: {party_hex}"
+        business_reg_msg = (
+        f"# New Business Registration Application:\nFounderID: {user_id}\nFounder: {nickname}\nBusiness Name: {business_name}\nBusiness Hex: {business_hex}"
         )
-        elections_admin = await bot.fetch_user(1103001028946837586)
-        await elections_admin.send(party_reg_msg)
+        business_admin = await bot.fetch_user(1103001028946837586)
+        await business_admin.send(business_reg_msg)
     else:
         await ctx.send("Invalid Hex Code.")
 
