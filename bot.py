@@ -115,4 +115,4 @@ async def party_register(ctx, party_name: str, party_hex: str):
 
 keep_alive.keep_alive()
 
-bot.run("MTM3ODQ1ODg1OTQ4MzU2MjA3OA.GiKaVl.B7_owcYfGEhXLN9Nm3hhZuxPbBn6sr09BGsPPI")
+bot.run(os.getenv("DISCORD_TOKEN"))
