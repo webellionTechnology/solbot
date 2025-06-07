@@ -115,7 +115,7 @@ async def party_register(ctx, party_name: str, party_hex: str):
 
 @bot.command(name="business-register")
 async def business_register(ctx, business_name: str, business_hex: str):
-    if len(party_hex) == 7:
+    if len(business_hex) == 7:
         user_id = ctx.author.id
         nickname = ctx.author.nick or ctx.author.name
         business_reg_msg = (
